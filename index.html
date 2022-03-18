@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>GFPortfolio</title>
+    </head>
+    <body id="change-to-white">
+        <header id="scroll-hide">
+            <div class="header-logo">
+                <H1>Gabe Fakhouri</H1>
+            </div>
+            <div class="header-links hide" id="header-links-grab">
+                <a href="#to-work-section" class="change-header-link-color">Work</a>
+                <a href="#to-about-section" class="change-header-link-color">About</a>
+                <a href="#to-social-link-section" class="change-header-link-color">Social Links</a>
+                <a href="#to-contact-section" class="change-header-link-color">Contact</a>
+            </div>
+            <div class="burger-wrapper hide">
+                <input id="toggle" type="checkbox"></input>
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+                <div class="nav">
+                    <div class="nav-wrapper">
+                        <nav class="link-select">
+                            <a class="link-close-nav" href="#to-work-section">WORK</a><br>
+                            <a class="link-close-nav" href="#to-about-section">ABOUT</a><br>
+                            <a class="link-close-nav" href="#to-social-link-section">SOCIAL LINKS</a><br>
+                            <a class="link-close-nav" href="#to-contact-section">CONTACT</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="landing-element" id="text-color-change">
+            <h1>Hi, I'm Gabe and I build all sorts of stuff for the Web.</h1>
+        </div>
+            <a id="to-work-section"></a>
+        <div class="black-background show">
+            <div class="line-element-right"></div>
+            <div class="title-left">
+                <h1>Latest Work</h1>
+            </div>
+            <div class="latest-work-container" id="click-me">
+                <div class="work-container"><img class="work-container-img" id="latest1" src="./Images/P1Final.png" alt="img1" width="400"></div>
+                <div class="work-container"><img class="work-container-img" id="latest2" src="./Images/P2Final.png" alt="img1" width="400"></div>
+                <div class="work-container"><img class="work-container-img" id="latest3" src="./Images/P3Final.png" alt="img1" width="400"></div>
+            </div>
+            <div class="line-element-left"></div>
+        </div>
+        <div class="white-background show">
+            <div class="on-white-line-element-right"></div>
+            <div class="add-padding">
+                    <a id="to-about-section"></a>
+                <div class="blurb-container">
+                    <div class="blurb-element"><img src="./Images/calibration.png" alt="icon" width="100"></div>
+                    <div class="blurb-element"><img src="./Images/connections.png" alt="icon" width="100"></div>
+                    <div class="blurb-element"><img src="./Images/web-design.png" alt="icon" width="100"></div>
+                    <div class="blurb-element"><img src="./Images/workspace.png" alt="icon" width="100"></div>
+                </div>
+                <div class="blurb-container-2">
+                    <div class="under-icon-text">Applications with a focus on efficiency.</div>
+                    <div class="under-icon-text">Works well with technical and creative minded people alike.</div>
+                    <div class="under-icon-text">Responsive and dynamic web applications.</div>
+                    <div class="under-icon-text">Takes to new web technologies quickly.</div>
+                </div>
+                <div class="description-container">
+                    <div class="about-box">
+                        <div class="img-place-holder"><img src="./Images/TestIcon.png" alt="Hey its me"></div>
+                        <div class="about-text">Gabe Fakhouri</div>
+                        <div class="about-text">Front-End developer with an aspiration for Full-Stack development.</div>
+                    </div>
+                    <div class="about-box-2">
+                        <div class="about-me-title">About Me</div>
+                        <hr>
+                        <div class="about-text">Jr. level developer with a knack for all things React. Proficient in the basics of front-end: Javascript (ES-everything), CSS3, & HTML5. Experience with Node.js, TypeScript, Express, MongoDB, & many other React, Javascript, & CSS libraries as well as design applications such as Adobe Illustrator & Photoshop. Currently learning Ruby/Rails & re-learning Python. Proficient in other non-web based languages such as C++, Haskell, Csound, SuperCollider, & MaxMSP. </div>
+                    </div>
+                        <a id="to-social-link-section"></a>
+                </div>
+                <div class="blurb-container-sc-links"> 
+                    <a href="https://www.linkedin.com/" class="blurb-element-icon"><img src="./Images/linkedin.png" alt="sc-link"></a>
+                    <a href="https://github.com/" class="blurb-element-icon"><img src="./Images/github.png" alt="sc-link"></a>
+                    <a href="https://www.facebook.com/" class="blurb-element-icon"><img src="./Images/facebook.png" alt="sc-link"></a>
+                    <a href="https://twitter.com/" class="blurb-element-icon"><img src="./Images/twitter.png" alt="sc-link"></a>
+                    <a href="https://www.instagram.com/" class="blurb-element-icon"><img src="./Images/instagram.png" alt="sc-link"></a>
+                </div>
+            </div>
+        </div>
+            <div class="on-white-line-element-left"></div>
+        </div>
+            <a id="to-contact-section-submited"></a>
+            <a id="to-contact-section"></a>
+        <div class="black-background show">
+            <div class="line-element-right"></div>
+                <div class="contact-title"><h1>Contact</h1></div>
+                    <div class="form-center">
+                        <form action="https://formsubmit.co/d6ad12ca96405dd6344caaf752f31ef5" method="POST">
+                            <!-- spm -->
+                            <input type="text" name="_honey" style="display: none;" />
+                            <!-- disable captcha -->
+                            <input type="hidden" name="_captcha" value="false" />
+                
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/#to-contact-section-submited" />
+                            First Name:<br>
+                            <input type="text" size="19" name="Contact-First-Name" required minlength="1"><br><br>
+                            Last Name:<br>
+                            <input type="text" size="19" name="Contact-Last-Name" required minlength="1"><br><br>
+                            Email:<br>
+                            <input type="email" name="Contact-Email" required minlength="1"><br><br> 
+                            Message:<br> 
+                            <textarea name="Contact-Message" rows="6″ cols="20″ required minlength="1">
+                            </textarea><br><br> 
+                            <button type="submit" value="Submit">Send</button>
+                        </form> 
+                    </div>
+            <div class="line-element-left"></div>
+        </div>
+        <div id='projects-modal' class='modal-background hide'>
+            <div class='modal-border'>
+                <div class='modal-container'>
+                    <div class='modal-title' id="modal-title-wrapper">
+                        <div class="modal-discription">
+                            <a id="project-modal-link" href="#" style="padding: unset; color: black;"><h3 class="modal-title-h3" id="modal-title"></h3></a>
+                            <hr>
+                            <div class="modal-text-div" id="modal-text"></div>
+                        </div>
+                        <div id="close-project-modal" class="modal-close">X</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='message-recived-modal' class='modal-background hide'>
+            <div class='modal-border'>
+                <div class='modal-container'>
+                    <div class='modal-title'>
+                        <div class="modal-discription">
+                            <h1>Thank you for contacting me! I'll respond shortly.</h1>
+                        </div>
+                        <a style="color: black;" id="close-message-recived-modal" class="modal-close" href="#to-contact-section">X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
