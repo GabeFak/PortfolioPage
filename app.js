@@ -5,18 +5,21 @@ const modalText = document.getElementById('modal-text');
 const modalTitleWrapper = document.getElementById("modal-title-wrapper");
 const modalContents = document.querySelector(".modal-border");
 const fadeInModalTextDelay = document.querySelector(".modal-discription");
+const modalBackground = document.querySelector(".modal-background");
 const headerLinks = document.querySelector(".header-links");
 const burgerWrapper = document.querySelector(".burger-wrapper");
 const toggle = document.getElementById('toggle');
 const linkCloseNav = document.querySelector('.link-select');
 const openMessageSentModal = document.getElementById('message-recived-modal');
 const projectModalLink = document.getElementById('project-modal-link');
+const projectModalLinkGit = document.getElementById('project-modal-link-git');
 
 let lastScrollTop = 0;
 let ModalTitle = '';
 let ModalText = '';
 let ModalImage = '';
 let ModalLink = '';
+let ModalGHubLink = '';
 
 window.addEventListener("load", () => {
     if(window.innerWidth <= 757) {
@@ -64,9 +67,9 @@ const checkNavSize = (windowWidth) => {
             headerLinks.classList.add('fade-in');
         };
     };
-}
+};
 
-document.querySelector('#close-project-modal').addEventListener('click', () => {
+const closeModal = () => {
     fadeInModalTextDelay.classList.remove('classname2');
     modalContents.classList.remove("classname");
     modal.classList.add('fade-out');
@@ -74,8 +77,15 @@ document.querySelector('#close-project-modal').addEventListener('click', () => {
         modal.classList.add('hide');
         modal.classList.remove('fade-out');
     }, 350);
-    //hides modal upon pressing cancel
+};
+
+modalBackground.addEventListener('click', (e) => { 
+    if(e.target.classList.contains('modal-background')) {
+        closeModal();
+    };
 });
+
+document.querySelector('#close-project-modal').addEventListener('click', closeModal);
 
 document.getElementById("close-message-recived-modal").addEventListener('click', () => {
     if(!openMessageSentModal.classList.contains('hide')) {
@@ -95,17 +105,19 @@ document.getElementById('toggle').addEventListener('change', (e)=> {
 document.querySelector('#click-me').addEventListener('click', function(e) {
     switch(e.target.id) {
         case "latest1":
-            ModalText = 'QuizTime is a full MERN stack application that utilizes NodeJs to create a backend with multiple end points and a diverse set of user permisions. Better interface comming soon!';
-            ModalTitle = 'QuizTime';
-            ModalImage = "./Images/P1Final.png";
-            ModalLink = '#';
+            ModalText = 'Quiz Host is quiz creation and hosting app. Its a MERN stack application which utilizes a custom made NodeJs API with a diverse set of user permisions and end points.';
+            ModalTitle = 'Quiz Host';
+            ModalImage = "./Images/portfoilioimage1.png";
+            ModalLink = 'https://shielded-reef-57745.herokuapp.com/';
+            ModalGHubLink = 'https://github.com/GabeFak/QHostClient';
             fillInModal();
             break;
         case "latest2":
-            ModalText = 'This site right here! Its only a place holder for another project comming soon.';
-            ModalTitle = 'This site :P';
-            ModalImage = "./Images/P2Final.png";
-            ModalLink = '#';
+            ModalText = 'A simple MERN stack \'Todo\' application where users can organize tasks in columns based on priority and access their data anywhere.';
+            ModalTitle = 'Task Tracker';
+            ModalImage = "./Images/portfoilioimage2alt.png";
+            ModalLink = 'https://shielded-wildwood-60757.herokuapp.com';
+            ModalGHubLink = 'https://github.com/GabeFak/priority-tracker2';
             fillInModal();
             break;
         case "latest3":
@@ -113,6 +125,7 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             ModalTitle = 'TeK_REsource ';
             ModalImage = "./Images/P3Final.png";
             ModalLink = '#';
+            ModalGHubLink = '#';
             fillInModal();
             break;  
     };
@@ -132,6 +145,7 @@ function fillInModal() {
     let titleTxt = document.createTextNode(ModalTitle);
     let modalInnerText = document.createTextNode(ModalText);
     projectModalLink.href = ModalLink;
+    projectModalLinkGit.href = ModalGHubLink;
     modalTitle.appendChild(titleTxt);
     modalText.appendChild(modalInnerText);
     //adds new title and text
@@ -153,7 +167,7 @@ function fillInModal() {
     modalContents.classList.add('classname');
     fadeInModalTextDelay.classList.add('classname2');
     //allows modal to be seen
-}
+};
 
 window.addEventListener("scroll", function(){
     let scrollTop = window.pageXOffset || document.documentElement.scrollTop;
@@ -187,6 +201,6 @@ function showOnScroll() {
         //     show[i].classList.remove("active");
         // }
     };
-}
+};
 
 
