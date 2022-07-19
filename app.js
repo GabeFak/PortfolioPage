@@ -160,11 +160,11 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             fillInModal();
             break;
         case "latest3":
-            ModalText = 'TeK_REsource is a small project built using react. The purpose of the project is to be an archive of archives for any electronic music related content.';
+            ModalText = 'TeK_REsource was originally a small static music resourse archiving blog I made a few years ago. The project has been refactored into a single page React application as a small excersize. A custom API with admin privleges and an article template will be added in the future.';
             ModalTitle = 'TeK_REsource ';
             ModalImage = "./Images/P3Final.png";
-            ModalLink = '#';
-            ModalGHubLink = '#';
+            ModalLink = 'https://tekresourceblog.herokuapp.com';
+            ModalGHubLink = 'https://github.com/GabeFak/TEKWRefactorWithReact';
             fillInModal();
             break;  
     };
