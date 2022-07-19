@@ -46,11 +46,22 @@
             <div class="title-left">
                 <h1>Latest Work</h1>
             </div>
+
             <div class="latest-work-container" id="click-me">
-                <div class="work-container"><img class="work-container-img" id="latest1" src="./Images/portfoilioimage1.png" alt="img1" width="400"></div>
-                <div class="work-container"><img class="work-container-img" id="latest2" src="./Images/portfoilioimage2alt.png" alt="img1" width="400"></div>
-                <div class="work-container"><img class="work-container-img" id="latest3" src="./Images/P3Final.png" alt="img1" width="400"></div>
+                <div class="work-container active" id="latest1" ><img class="work-container-img" id="latest1" src="./Images/portfoilioimage1.png" alt="img1" width="400"></div>
+                <div class="work-container" id="latest2" ><img class="work-container-img" id="latest2" src="./Images/portfoilioimage2alt.png" alt="img1" width="400"></div>
+                <div class="work-container" id="latest3" ><img class="work-container-img" id="latest3" src="./Images/P3Final.png" alt="img1" width="400"></div>
             </div>
+
+            <div class="dot-container">
+                <button onclick = "dot(1)"></button>
+                <button onclick = "dot(2)"></button>
+                <button onclick = "dot(3)"></button>
+            </div>
+
+            <button id="prev" onclick="prev()"> &lt; </button>
+            <button id="next" onclick="next()"> &gt; </button>
+
             <div class="line-element-left"></div>
         </div>
         <div class="white-background show">

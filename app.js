@@ -14,12 +14,51 @@ const openMessageSentModal = document.getElementById('message-recived-modal');
 const projectModalLink = document.getElementById('project-modal-link');
 const projectModalLinkGit = document.getElementById('project-modal-link-git');
 
+const dots = document.querySelectorAll(".dot-container button");
+const images = document.querySelectorAll(".latest-work-container .work-container");
+
+let i = 0; // current slide
+let j = 3; // total slides
+
+
 let lastScrollTop = 0;
 let ModalTitle = '';
 let ModalText = '';
 let ModalImage = '';
 let ModalLink = '';
 let ModalGHubLink = '';
+
+function next(){
+
+    document.getElementById("latest" + (i+1)).classList.remove("active");
+    
+    i = ( j + i + 1) % j;
+    document.getElementById("latest" + (i+1)).classList.add("active");
+    indicator( i+ 1 );
+}
+
+function prev(){
+    document.getElementById("latest" + (i+1)).classList.remove("active");
+    i = (j + i - 1) % j;
+    document.getElementById("latest" + (i+1)).classList.add("active");
+    indicator(i+1);
+}
+
+function indicator(num){
+    dots.forEach(function(dot){
+        dot.style.backgroundColor = "#000";
+    });
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#fff";
+}
+
+function dot(index){
+    images.forEach(function(image){
+        image.classList.remove("active");
+    });
+    document.getElementById("latest" + index).classList.add("active");
+    i = index - 1;
+    indicator(index);
+}
 
 window.addEventListener("load", () => {
     if(window.innerWidth <= 757) {
