@@ -327,6 +327,8 @@ header {
 
 .img-place-holder {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .img-place-holder > img {
@@ -1269,6 +1271,167 @@ button[type="submit"]:hover {
 @media (min-width: 2120px) {
   .landing-element {
     font-size: 6.6em;
+  }
+  
+  .img-place-holder > img {
+    width: 375px;
+  }
+}
+
+@media (min-width: 2600px) {
+  .header-logo h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 6em;
+  }
+
+  .header-links a {
+    font-size: 3.8em;
+    padding-right: 80px;
+  }
+
+  .landing-element {
+    font-size: 12em;
+  }
+
+  .landing-element h1 {
+    padding-top: 200px;
+  }
+
+  .title-left h1 {
+    margin-top: 0;
+    font-size: 7em;
+    margin-left: 60px;
+    letter-spacing: 3px;
+  }
+
+  .latest-work-container {
+    margin-top: 40px;
+  }
+
+  .modal-container {
+    width: 1400px;
+  }
+
+  .modal-image {
+    width: 1400px;
+  }
+
+  .modal-discription {
+    font-family: "GT";
+    text-align: left;
+    width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .modal-title-h3 {
+    font-size: 4.8em;
+  }
+
+  #project-modal-link img {
+    width: 64px;
+  }
+
+  #project-modal-link-git img {
+    width: 64px;
+  }
+
+  .modal-text-div {
+    font-size: 3.4em;
+  }
+
+  .modal-close {
+    font-size: 3.6em;
+  }
+
+  .nameAndLinks a {
+    margin-top: 30px;
+  }
+
+  .blurb-element img {
+    width: 250px;
+  }
+
+  .under-icon-text {
+    width: 475px;
+  }
+
+  .under-icon-text {
+    font-size: 2.8em;
+  }
+
+  .about-box {
+    width: 975px;
+    line-height: 4em;
+    height: 1100px;
+  }
+
+  .about-me-title {
+    margin-top: 60px;
+  }
+
+  .img-place-holder {
+    margin-top: 60px;
+  }
+
+  .img-place-holder > img {
+    width: 575px;
+  }
+
+  .about-box-2 {
+    max-width: 1115px;
+    height: 1100px;
+    margin-left: 80px;
+    line-height: 4.6em;
+  }
+
+  .about-text,
+  .about-me-title {
+    font-size: 3.6em;
+  }
+
+  .blurb-element-icon > img {
+    width: 200px;
+  }
+
+  
+  .contact-title h1 {
+    font-size: 4em;
+  }
+
+  .form-center {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  form {
+    border: 5px solid white;
+    padding: 36px;
+    width: 40%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 18px 28px;
+    margin: 16px 0;
+    border: 3px solid white;
+    border-radius: 6px;
+  }
+
+  button[type="submit"],
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 1.2em;
+  }
+
+  form {
+    font-size: 2.8em;
   }
 }
 
