@@ -144,24 +144,24 @@ document.getElementById('toggle').addEventListener('change', (e)=> {
 document.querySelector('#click-me').addEventListener('click', function(e) {
     switch(e.target.id) {
         case "latest1":
-            ModalText = 'Quiz Host is quiz creation and hosting app. Its a MERN stack application which utilizes a custom made NodeJs API with a diverse set of user permisions and end points.';
+            ModalText = 'Quiz Host is a full CRUD, MERN stack application for quiz creation and hosting. It utilizes a custom made NodeJs API with a diverse set of user permissions and endpoints.';
             ModalTitle = 'Quiz Host';
             ModalImage = "./Images/portfoilioimage1.png";
             ModalLink = 'https://shielded-reef-57745.herokuapp.com/';
-            ModalGHubLink = 'https://github.com/GabeFak/QHostClient';
+            ModalGHubLink = 'https://github.com/GabeFak/Quiz-Host-MERN-HEROKU-FINAL';
             fillInModal();
             break;
         case "latest2":
-            ModalText = 'A simple MERN stack \'Todo\' application where users can organize tasks in columns based on priority and access their data anywhere.';
-            ModalTitle = 'Task Tracker';
+            ModalText = 'Priority Tracker is a simple MERN stack \'Todo list\' application were users can organize tasks in columns based on priority and access their data anywhere.';
+            ModalTitle = 'Priority Tracker';
             ModalImage = "./Images/portfoilioimage2alt.png";
             ModalLink = 'https://shielded-wildwood-60757.herokuapp.com';
             ModalGHubLink = 'https://github.com/GabeFak/priority-tracker2';
             fillInModal();
             break;
         case "latest3":
-            ModalText = 'TeK_REsource was originally a small static music resourse archiving blog I made a few years ago. The project has been refactored into a single page React application as a small excersize. A custom API with admin privleges and an article template will be added in the future.';
-            ModalTitle = 'TeK_REsource ';
+            ModalText = 'TeK_REsource was originally a small static music resource archiving blog I made a few years ago. The project has been refactored into a single page React application as a small exercise in sub-component management. A content database and custom API with admin privileges will be added in the future.';
+            ModalTitle = 'TeK_REsource';
             ModalImage = "./Images/P3Final.png";
             ModalLink = 'https://tekresourceblog.herokuapp.com';
             ModalGHubLink = 'https://github.com/GabeFak/TEKWRefactorWithReact';
