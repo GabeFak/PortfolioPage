@@ -148,7 +148,7 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             ModalTitle = 'Quiz Host';
             ModalImage = "./Images/portfoilioimage1.png";
             ModalLink = 'https://shielded-reef-57745.herokuapp.com/';
-            ModalGHubLink = 'https://github.com/GabeFak/Quiz-Host-MERN-HEROKU-FINAL';
+            ModalGHubLink = 'https://github.com/GabeFak/Quiz-Host-MERN-HEROKU';
             fillInModal();
             break;
         case "latest2":
@@ -156,7 +156,7 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             ModalTitle = 'Priority Tracker';
             ModalImage = "./Images/portfoilioimage2alt.png";
             ModalLink = 'https://shielded-wildwood-60757.herokuapp.com';
-            ModalGHubLink = 'https://github.com/GabeFak/priority-tracker2';
+            ModalGHubLink = 'https://github.com/GabeFak/Priority-Tracker-App';
             fillInModal();
             break;
         case "latest3":
