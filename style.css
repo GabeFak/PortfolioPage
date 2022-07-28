@@ -1084,6 +1084,29 @@ button[type="submit"]:hover {
   }
 }
 
+@media (max-width: 420px) {
+  .hamburger {
+    right: 8%;
+  }
+
+  .landing-element {
+    font-size: 1.6em;
+  }
+
+  .img-place-holder > img {
+    width: 275px;
+    margin-left: 30px;
+  }
+
+  .about-box-2, .about-box {
+    width: auto;
+  }
+
+  .about-box-2 {
+    height: 725px;
+  }
+}
+
 @media (min-width: 1930px) {
   .header-logo h1 {
     margin-top: 15px;
