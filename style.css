@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 @font-face {
@@ -20,11 +21,15 @@
   --colValInv: 0;
 }
 
+html, body {
+  overflow-x:hidden 
+} 
+
 body {
   background-color: rgb(var(--colValInv), var(--colValInv), var(--colValInv));
   margin: unset;
   transition: 0.5s;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -333,6 +338,7 @@ header {
 
 .img-place-holder > img {
   width: 375px;
+  height: 375px;
 }
 
 .about-text,
@@ -840,8 +846,10 @@ button[type="submit"]:hover {
   }
 
   .img-place-holder > img {
-    width: 375px;
-    margin-left: 30px;
+    /* width: 375px; */
+    width: 90%;
+    /* height: auto; */
+    /* margin-left: 30px; */
   }
 
   .blurb-container-sc-links {
@@ -1094,8 +1102,10 @@ button[type="submit"]:hover {
   }
 
   .img-place-holder > img {
-    width: 275px;
-    margin-left: 30px;
+    /* width: 275px; */
+    width: 80%;
+    height: 80%;
+    /* margin-left: 30px; */
   }
 
   .about-box-2, .about-box {
@@ -1298,6 +1308,8 @@ button[type="submit"]:hover {
   
   .img-place-holder > img {
     width: 375px;
+    /* height: auto; */
+    height: 375px;
   }
 }
 
@@ -1400,6 +1412,7 @@ button[type="submit"]:hover {
   }
 
   .img-place-holder > img {
+    height: auto;
     width: 575px;
   }
 
