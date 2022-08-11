@@ -155,8 +155,8 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             ModalText = 'Priority Tracker is a simple MERN stack \'Todo list\' application were users can organize tasks in columns based on priority and access their data anywhere.';
             ModalTitle = 'Priority Tracker';
             ModalImage = "./Images/portfoilioimage2alt.png";
-            ModalLink = 'https://shielded-wildwood-60757.herokuapp.com';
-            ModalGHubLink = 'https://github.com/GabeFak/Priority-Tracker-App';
+            ModalLink = 'https://prioritytracker.herokuapp.com/';
+            ModalGHubLink = 'https://github.com/GabeFak/Priority-Tracker-MERN';
             fillInModal();
             break;
         case "latest3":
