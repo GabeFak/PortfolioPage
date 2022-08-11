@@ -147,8 +147,8 @@ document.querySelector('#click-me').addEventListener('click', function(e) {
             ModalText = 'Quiz Host is a full CRUD, MERN stack application for quiz creation and hosting. It utilizes a custom made NodeJs API with a diverse set of user permissions and endpoints.';
             ModalTitle = 'Quiz Host';
             ModalImage = "./Images/portfoilioimage1.png";
-            ModalLink = 'https://shielded-reef-57745.herokuapp.com/';
-            ModalGHubLink = 'https://github.com/GabeFak/Quiz-Host-MERN-HEROKU';
+            ModalLink = 'https://quizhostapp.herokuapp.com/';
+            ModalGHubLink = 'https://github.com/GabeFak/Quiz-Host-MERN-HEROKU-FINAL';
             fillInModal();
             break;
         case "latest2":
